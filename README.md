@@ -132,6 +132,10 @@ The dataset contains customer transaction and behavioral data. Below is the desc
 * Design marketing campaigns for Young Adults
 
 ---
+## 📷 Dashboard Preview
+<img width="1168" height="665" alt="image" src="https://github.com/user-attachments/assets/9b799495-7aa4-4705-a7d1-53ed3de2907d" />
+
+---
 
 ## 📁 Project Structure
 
