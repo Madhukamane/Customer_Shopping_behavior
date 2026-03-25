@@ -18,20 +18,36 @@ The project follows an **end-to-end workflow** including data cleaning (Python),
 
 ---
 
-## 🧾 Dataset Description
+## 🧾 Dataset Column Description
 
-The dataset contains transactional customer data with the following fields:
+The dataset contains customer transaction and behavioral data. Below is the description of the original columns:
 
-* Customer ID
-* Gender
-* Age Group
-* Product Category
-* Quantity
-* Price
-* Payment Method
-* Shipping Type
-* Subscription Status
-* Location
+| Column Name                | Description                                                             |
+| -------------------------- | ----------------------------------------------------------------------- |
+| **customer_id**            | Unique identifier assigned to each customer                             |
+| **age**                    | Age of the customer                                                     |
+| **gender**                 | Gender of the customer (Male/Female)                                    |
+| **item_purchased**         | Name of the product purchased by the customer                           |
+| **category**               | Category to which the product belongs (e.g., Clothing, Accessories)     |
+| **purchase_amount**        | Total amount spent by the customer on a transaction                     |
+| **location**               | Geographic location of the customer                                     |
+| **size**                   | Size of the purchased product                                           |
+| **color**                  | Color of the purchased product                                          |
+| **season**                 | Season during which the purchase was made (Winter, Summer, etc.)        |
+| **review_rating**          | Rating given by the customer for the purchased product                  |
+| **subscription_status**    | Indicates whether the customer is subscribed (Yes/No)                   |
+| **shipping_type**          | Type of shipping selected (Free, Standard, Express, etc.)               |
+| **discount_applied**       | Indicates whether a discount was applied (Yes/No)                       |
+| **previous_purchases**     | Number of purchases made by the customer before the current transaction |
+| **payment_method**         | Mode of payment used (Credit Card, UPI, etc.)                           |
+| **frequency_of_purchases** | Category representing how often the customer makes purchases            |
+
+---
+
+## 🧠 Derived Features (Created Using Python)
+
+* **age_group** → Customer segmentation (Young Adult, Adult, Senior)
+* **purchase_frequency_days** → Average number of days between purchases
 
 ---
 
